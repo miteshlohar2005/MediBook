@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 63.9%;
+    --radius: 0.5rem;
+    
+    /* Theme Variables */
+    --c-cream: #F5F0E8;
+    --c-rose: #D4A5A5;
+    --c-teal: #2E7D8A;
+    --c-teal-dark: #1f5f6b;
+    --c-rose-dark: #b88888;
+    --c-text: #1a1a1a;
+    --c-text-light: #666666;
+    --c-bg-card: #ffffff;
+    --c-border-subtle: rgba(46,125,138,0.1);
+    --c-border-subtle-heavy: rgba(46,125,138,0.2);
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+
+    /* Dark Mode Theme Variables */
+    --c-cream: #0f172a; /* slate-900 */
+    --c-rose: #f43f5e; /* rose-500 */
+    --c-teal: #06b6d4; /* cyan-500 */
+    --c-teal-dark: #0891b2; /* cyan-600 */
+    --c-rose-dark: #e11d48; /* rose-600 */
+    --c-text: #f8fafc; /* slate-50 */
+    --c-text-light: #94a3b8; /* slate-400 */
+    --c-bg-card: #1e293b; /* slate-800 */
+    --c-border-subtle: rgba(255,255,255,0.08);
+    --c-border-subtle-heavy: rgba(255,255,255,0.15);
+  }
+
+  * {
+    border-color: hsl(var(--border));
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  }
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
+}
